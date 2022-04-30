@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/drawable/color_round.xml" value="0.1425" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/drawable/octagon.xml" value="0.1425" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/activity_chr.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/activity_chr_detail.xml" value="0.20168066580377575" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/activity_chrdetail.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/activity_collection.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/activity_collection_rv_tiem.xml" value="0.20168066580377575" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/activity_inspiration.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/activity_inspiration_detail.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/activity_main.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/center_activity_main.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/center_main.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/chr_color_list_rv_item.xml" value="0.20168066580377575" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/fragment_chr_color_list.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/home_activity_main.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/home_main.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/top_activity_main.xml" value="0.4033613316075515" />
+        <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/top_main.xml" value="0.23278985507246377" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

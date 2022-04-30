@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.redrockmterm.customview.ScrollerDownView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/main_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.homeactivity.MainActivity">
+
+    <include layout="@layout/home_activity_main"/>
+    <include layout="@layout/center_activity_main"/>
+    <include layout="@layout/top_activity_main" android:id="@+id/top_layout"/>
+
+</com.example.redrockmterm.customview.ScrollerDownView>
