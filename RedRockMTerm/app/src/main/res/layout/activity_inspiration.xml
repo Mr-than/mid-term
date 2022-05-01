@@ -1,9 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:overScrollMode="never"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.inspiration.inspirationactivity.InspirationActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:background="#F2F3F5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/activity_chr_tab_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.242">
+            <ImageView
+                android:clickable="true"
+                android:id="@+id/inspiration_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="32dp"
+                android:src="@drawable/color_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.526"
+                android:focusable="true" />
+            <TextView
+                android:id="@+id/inspiration_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="112dp"
+                android:text="绿"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/inspiration_imageView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.526" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.example.redrockmterm.customview.OctagonView
+                android:id="@+id/i_view"
+                android:layout_width="180dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="80dp"
+                android:rotation="23" />
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:src="@drawable/im_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginStart="30dp"
+                android:layout_width="51dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:src="@drawable/im_1" />
+
+            <com.example.redrockmterm.customview.OctagonView
+                android:layout_marginStart="90dp"
+                android:id="@+id/j_view"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="152dp"
+                android:rotation="23" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.example.redrockmterm.customview.OctagonView
+                android:id="@+id/k_view"
+                android:layout_width="180dp"
+                android:layout_marginStart="20dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="80dp"
+                android:rotation="23" />
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:src="@drawable/im_1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginStart="30dp"
+                android:layout_width="51dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:src="@drawable/im_1" />
+            <com.example.redrockmterm.customview.OctagonView
+                android:layout_marginStart="90dp"
+                android:id="@+id/m_view"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="152dp"
+                android:rotation="23" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

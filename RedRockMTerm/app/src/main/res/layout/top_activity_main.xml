@@ -42,6 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/top_activity_main_inspiration" />
 
     <ImageView
+        android:clickable="true"
         android:id="@+id/top_activity_main_inspiration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,7 +50,8 @@
         android:src="@drawable/inspiration"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top_activity_main_chromatographic" />
+        app:layout_constraintTop_toBottomOf="@+id/top_activity_main_chromatographic"
+        android:focusable="true" />
 
     <ImageView
         android:id="@+id/top_activity_main_back_home"

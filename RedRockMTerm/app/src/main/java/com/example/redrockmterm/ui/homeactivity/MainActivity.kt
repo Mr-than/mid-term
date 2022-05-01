@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.redrockmterm.databinding.ActivityMainBinding
 import com.example.redrockmterm.databinding.TopActivityMainBinding
 import com.example.redrockmterm.ui.colorview.chractivity.ChrActivity
+import com.example.redrockmterm.ui.inspiration.inspirationactivity.InspirationActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,6 +36,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this,ChrActivity::class.java))
         }
 
+        topBinding.topActivityMainInspiration.setOnClickListener {
+            startActivity(Intent(this,InspirationActivity::class.java))
+        }
     }
 
 }

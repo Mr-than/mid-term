@@ -1,1 +1,5 @@
-# redrock-mid-term-examination
+# 红岩期中考核
+
+开始时间：2022/4/29
+
+第一次commit时间：2022/5/1

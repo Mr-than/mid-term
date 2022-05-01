@@ -74,14 +74,14 @@
         app:tabMaxWidth="200dp"
         app:tabMinWidth="0dp"
         app:tabMode="scrollable"
-        app:tabPaddingEnd="12dp"
-        app:tabPaddingStart="12dp"
+        app:tabPaddingEnd="5dp"
+        app:tabPaddingStart="5dp"
         app:tabRippleColor="@null" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/activity_chr_view_pager2"
-        android:layout_width="396dp"
-        android:layout_height="674dp"
+        android:layout_width="match_parent"
+        android:layout_height="614dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
