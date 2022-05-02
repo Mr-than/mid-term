@@ -4,17 +4,14 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
-import android.util.Log
 import android.view.View
 import com.example.redrockmterm.R
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
 import kotlin.math.cos
 import kotlin.math.min
 import kotlin.math.sin
-import kotlin.properties.Delegates
+
 
 class OctagonView : View {
 
@@ -27,6 +24,7 @@ class OctagonView : View {
     private lateinit var region: Region
     private val job= Job()
     private val scope= CoroutineScope(job)
+    private var isDraw=false
 
     private lateinit var bitmap:Bitmap
 
@@ -62,13 +60,15 @@ class OctagonView : View {
         setLayerType(LAYER_TYPE_SOFTWARE,null)
         path = Path()
 
+       // bitmap=BitmapFactory.decodeResource(resources, R.id.cardView)
+
         paint= Paint()
-        paint.strokeWidth = 25f;
-        paint.color = Color.RED;
-        paint.isDither = true;
-        paint.style = Paint.Style.STROKE;
-        paint.strokeJoin = Paint.Join.ROUND;
-        paint.strokeCap = Paint.Cap.ROUND;
+        paint.strokeWidth = 25f
+        paint.color = Color.RED
+        paint.style = Paint.Style.STROKE
+        paint.isFilterBitmap = true; //对Bitmap进行滤波处理
+        paint.isAntiAlias = true;//设置抗锯齿
+
     }
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
@@ -83,18 +83,29 @@ class OctagonView : View {
     override fun onDraw(canvas: Canvas) {
         setE()
         path.close()
-        canvas.save()
-        canvas.clipPath(path)
-        canvas.drawBitmap(bitmap,centerX.toFloat()-r,centerY.toFloat()-r,paint)
-        canvas.restore()
-    }
-    fun setPhoto(re:Int){
-        bitmap=BitmapFactory.decodeResource(resources, re)
-        paint.reset()
 
+        if(isDraw) {
+
+            canvas.save()
+            canvas.clipPath(path)
+            val rect = Rect(
+                (centerX - r).toInt(), (centerY - r).toInt(), (centerX + r).toInt(),
+                (centerY + r).toInt()
+            )
+
+            val pfd = PaintFlagsDrawFilter(0, Paint.ANTI_ALIAS_FLAG or Paint.FILTER_BITMAP_FLAG)
+            canvas.drawFilter = pfd
+            canvas.drawBitmap(bitmap, null, rect, paint)
+
+            canvas.restore()
+        }
+      }
+    fun setPhoto(re:Bitmap){
+        bitmap=re
+        paint.reset()
+        isDraw=true
         invalidate()
     }
-
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec)
        val height = 200;
@@ -111,8 +122,6 @@ class OctagonView : View {
             setMeasuredDimension(widthSpecSize,height);
         }
     }
-
-
     private fun setE(){
         for (i in 0 until 8) {
             if (i == 0) {

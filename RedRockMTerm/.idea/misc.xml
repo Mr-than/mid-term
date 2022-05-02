@@ -21,18 +21,31 @@
         <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/home_main.xml" value="0.23278985507246377" />
         <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/top_activity_main.xml" value="0.4033613316075515" />
         <entry key="..\:/Android's project/RedRockMTerm/app/src/main/res/layout/top_main.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/drawable/buttom_shap.xml" value="0.144" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/drawable/color_round.xml" value="0.143" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/drawable/ic_boarder.xml" value="0.143" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/drawable/phone_button_selector.xml" value="0.144" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/drawable/phone_button_shape.xml" value="0.144" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/drawable/phone_button_unselector.xml" value="0.144" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/drawable/sh.xml" value="0.144" />
         <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/activity_chr.xml" value="0.20168066580377575" />
-        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/activity_chr_detail.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/activity_chr_detail.xml" value="0.20168066580377575" />
         <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/activity_collection.xml" value="0.23278985507246377" />
-        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/activity_collection_rv_tiem.xml" value="0.23278985507246377" />
-        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/activity_inspiration.xml" value="0.20168066580377575" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/activity_collection_rv_tiem.xml" value="0.20168066580377575" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/activity_color_page.xml" value="0.23731884057971014" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/activity_inspiration.xml" value="0.26621847886098404" />
         <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/activity_inspiration_detail.xml" value="0.20168066580377575" />
         <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/activity_main.xml" value="0.23278985507246377" />
         <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/center_activity_main.xml" value="0.23278985507246377" />
         <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/chr_color_list_rv_item.xml" value="0.23278985507246377" />
         <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/fragment_chr_color_list.xml" value="0.26621847886098404" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/fragment_login.xml" value="0.23731884057971014" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/fragment_s.xml" value="0.23731884057971014" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/fragment_signin.xml" value="0.20168066580377575" />
         <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/home_activity_main.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/idea_vp_detail.xml" value="0.20168066580377575" />
         <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/top_activity_main.xml" value="0.23278985507246377" />
+        <entry key="..\:/Android's project/redrock-mid-term-examination/RedRockMTerm/app/src/main/res/layout/vp_rv_item.xml" value="0.23369565217391305" />
       </map>
     </option>
   </component>

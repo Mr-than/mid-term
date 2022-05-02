@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.homeactivity.MainActivity">
 
-    <include layout="@layout/home_activity_main"/>
+    <include layout="@layout/home_activity_main" android:id="@+id/home_layout"/>
     <include layout="@layout/center_activity_main"/>
     <include layout="@layout/top_activity_main" android:id="@+id/top_layout"/>
 
