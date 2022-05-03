@@ -30,7 +30,7 @@ class ChrActivityViewModel:ViewModel() {
 
             val d=ChrActivityRepository.getColorId()
 
-            delay(500)
+            //delay(500)
 
             colorMuData.postValue(Te(a,d))
         }

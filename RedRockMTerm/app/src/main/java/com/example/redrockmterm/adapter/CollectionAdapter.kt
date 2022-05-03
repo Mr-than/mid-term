@@ -56,12 +56,15 @@ class CollectionAdapter(val context: Context, private val list:ArrayList<Star>):
                     val s= JSONObject(a)
                     val json=s.getString("message")
 
+
+                    val aaa=ArrayList<Star>()
+                    aaa.addAll(list)
+                    Thread.sleep(20)
+                    aaa.removeAt(position)
+
                     (context as CollectionActivity).runOnUiThread {
-                        Toast.makeText(context,json,Toast.LENGTH_SHORT).show()
-                        val aaa=ArrayList<Star>()
-                        aaa.addAll(list)
-                        aaa.removeAt(position)
                         update(aaa)
+                        Toast.makeText(context,json,Toast.LENGTH_SHORT).show()
                     }
                 }
             }
@@ -106,9 +109,9 @@ class CollectionAdapter(val context: Context, private val list:ArrayList<Star>):
 
         override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int)=oldData[oldItemPosition]==newData[newItemPosition]
 
-        override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int)=false
+        override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int)=true
 
-        override fun getChangePayload(oldItemPosition: Int, newItemPosition: Int) = ""
+        override fun getChangePayload(oldItemPosition: Int, newItemPosition: Int) = " "
     }
 
 
