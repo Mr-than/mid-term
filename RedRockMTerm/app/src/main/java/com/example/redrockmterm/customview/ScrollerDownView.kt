@@ -143,9 +143,7 @@ class ScrollerDownView : ViewGroup {
 
                 moveY = event.rawY
 
-
                 var scrollerY:Float= lastY - moveY
-
 
                 if(scrollY<refreshY-100){
                     scrollerY=0F

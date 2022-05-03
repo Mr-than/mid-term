@@ -36,12 +36,30 @@ class SFragment: Fragment() {
                 calendars.timeZone = TimeZone.getTimeZone("GMT+8:00")
                 val month: String = (calendars.get(Calendar.MONTH) + 1).toString()
                 val day: String = calendars.get(Calendar.DATE).toString()
-                val h: String = calendars.get(Calendar.HOUR).toString()
+                val i=calendars.get(Calendar.AM_PM)
+                var h: String = calendars.get(Calendar.HOUR).toString()
                 val m:String=calendars.get(Calendar.MINUTE).toString()
                 val s: String = calendars.get(Calendar.SECOND).toString()
 
+
+                if(i==1){
+                    var temp=h.toInt()
+                    temp+=12
+                    h=temp.toString()
+                }
+
                 requireActivity().runOnUiThread {
                     binding.n.text="$month 月 $day 日 $h 时 $m 分 $s 秒"
+                    if(h.toInt() in 0..6){
+                        binding.p.text="夜不能寐时，寒星相照"
+                    }else if(h.toInt() in 6..12){
+                        binding.p.text="早上好~"
+                    }else if(h.toInt() in 12..18){
+                        binding.p.text="下午好~"
+                    }else if(h.toInt() in 18..23){
+                        binding.p.text="该睡觉了~"
+                    }
+
                 }
 
             }
